@@ -24,3 +24,19 @@
 В цикле пройти по массиву и вызвать метод print() для каждого объекта.
 Создать статический метод printMagazines(Printable[] printable) в классе Magazine, который выводит на консоль названия только журналов.
 Создать статический метод printBooks(Printable[] printable) в классе Book, который выводит на консоль названия только книг.
+
+7.
+Создаем абстракный класс Person и дочерние классы - Student, Mentor
+Person -> FIO, (enum)pl, age, gender
+
+pl->Java,Python,JavaScript,Flutter
+
+Student -> (enum)payment -> FREE, PAYED, HALFPAYED, NOTPAYED, DELETED
+
+Mentor  -> enum(degree) -> intern, junior, middle, senior
+ 
+ 
+В классе Main реализовать методы enum: name(), ordinal(), values().
+
+Создать по 3 экземпляра Student и Mentor и вывести на консоль
+информацию о них.
