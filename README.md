@@ -38,14 +38,15 @@ pl->Java,Python,JavaScript,Flutter
 Student -> (enum)payment -> FREE, PAYED, HALFPAYED, NOTPAYED, DELETED
 
 Mentor  -> enum(degree) -> intern, junior, middle, senior
- 
- 
+
 В классе Main реализовать методы enum: name(), ordinal(), values().
 
 Создать по 3 экземпляра Student и Mentor и вывести на консоль
 информацию о них.
 
+
 8. Exception
+
 Создать статический метод который принимает на вход три параметра: login,
 password и confirmPassword. Login должен содержать только латинские
 буквы, цифры и спецсимволы. Длина login должна быть не меньше 8
