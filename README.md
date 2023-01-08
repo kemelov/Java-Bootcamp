@@ -103,7 +103,7 @@ arrayOfParticipants(List участников), status->enum(статус вст
 Реализуйте все известные вам методы HashMap.
 Выведите результат на консоль.
 
-12 TreeSet
+12 Set
 
 Урожай 
 
