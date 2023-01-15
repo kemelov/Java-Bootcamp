@@ -1,0 +1,20 @@
+Создайте таблицу Phones c полями:  id primary key, brand, model, price.
+Редактируйте вашу таблицу phones, добавьте новые столбцы: manf_country, display_type.
+Реализуйте несколько вариантов select запросов.
+
+create table Phones(
+	id serial primary key,
+	brand varchar(255),
+	age integer
+);
+
+alter table Phones
+add column manf_factory varchar(255);
+add column display_type varchar(255);
+
+select * from Phones;
+select brand, age from phones;
+select * from Phones order by display_type;
+select manf_factory, age from Phones group by manf_factory;
+select id from Phones where age = 8;
+select display_type from Phones where id = (select id from Phones where brand = 'Samsung');
