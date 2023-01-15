@@ -1,12 +1,11 @@
-/*Îáíîâèòå öåíû íà îïğåäåëåííûå ìîäåëè âàøèõ òåëåôîíîâ. Óìíîæüòå êîëè÷åñòâî òîâàğà â ñâÿçè ñ íîâûìè ïîñòàâêàìè. */
+/*ĞĞ±Ğ½Ğ¾Ğ²Ğ¸Ñ‚Ğµ Ñ†ĞµĞ½Ñ‹ Ğ½Ğ° Ğ¾Ğ¿Ñ€ĞµĞ´ĞµĞ»ĞµĞ½Ğ½Ñ‹Ğµ Ğ¼Ğ¾Ğ´ĞµĞ»Ğ¸ Ğ²Ğ°ÑˆĞ¸Ñ… Ñ‚ĞµĞ»ĞµÑ„Ğ¾Ğ½Ğ¾Ğ². Ğ£Ğ¼Ğ½Ğ¾Ğ¶ÑŒÑ‚Ğµ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ñ‚Ğ¾Ğ²Ğ°Ñ€Ğ° Ğ² ÑĞ²ÑĞ·Ğ¸ Ñ Ğ½Ğ¾Ğ²Ñ‹Ğ¼Ğ¸ Ğ¿Ğ¾ÑÑ‚Ğ°Ğ²ĞºĞ°Ğ¼Ğ¸. */
 
-/*Ñîçäàåì ïîëÿ price, amount äëÿ òàáëèöû Phones */
-alter table Phones
+/*Ğ¡Ğ¾Ğ·Ğ´Ğ°ĞµĞ¼ Ğ¿Ğ¾Ğ»Ñ price, amount Ğ´Ğ»Ñ Ñ‚Ğ°Ğ±Ğ»Ğ¸Ñ†Ñ‹ Phones */alter table Phones
 add price integer,
 add amount integer;
 
 
-/*Âûñòàâëÿåì öåíû è êîë-âî òîâàğîâ */
+/*Ğ’Ñ‹ÑÑ‚Ğ°Ğ²Ğ»ÑĞµĞ¼ Ñ†ĞµĞ½Ñ‹ Ğ¸ ĞºĞ¾Ğ»-Ğ²Ğ¾ Ñ‚Ğ¾Ğ²Ğ°Ñ€Ğ¾Ğ² */
 update Phones set price = 100 where age >= 10;
 update Phones set price = 500 where age >= 5 and age < 10;
 update Phones set price = 800 where age < 5;
@@ -15,6 +14,6 @@ update Phones set amount = 100 where age >= 10;
 update Phones set amount = 500 where age >= 5 and age < 10;
 update Phones set amount = 800 where age < 5;
 
-/*Ïîâûøàåì öåíû è óâåëè÷èâàåì êîë-âî òîâàğîâ */
+/*ĞŸĞ¾Ğ²Ñ‹ÑˆĞ°ĞµĞ¼ Ñ†ĞµĞ½Ñ‹ Ğ¸ ÑƒĞ²ĞµĞ»Ğ¸Ñ‡Ğ¸Ğ²Ğ°ĞµĞ¼ ĞºĞ¾Ğ»-Ğ²Ğ¾ Ñ‚Ğ¾Ğ²Ğ°Ñ€Ğ¾Ğ² */
 update Phones set price = price * 1.1;
 update Phones set amount = amount * 2;
