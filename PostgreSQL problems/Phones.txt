@@ -1,6 +1,6 @@
-Создайте таблицу Phones c полями:  id primary key, brand, model, price.
-Редактируйте вашу таблицу phones, добавьте новые столбцы: manf_country, display_type.
-Реализуйте несколько вариантов select запросов.
+РЎРѕР·РґР°Р№С‚Рµ С‚Р°Р±Р»РёС†Сѓ Phones c РїРѕР»СЏРјРё:  id primary key, brand, model, price.
+Р РµРґР°РєС‚РёСЂСѓР№С‚Рµ РІР°С€Сѓ С‚Р°Р±Р»РёС†Сѓ phones, РґРѕР±Р°РІСЊС‚Рµ РЅРѕРІС‹Рµ СЃС‚РѕР»Р±С†С‹: manf_country, display_type.
+Р РµР°Р»РёР·СѓР№С‚Рµ РЅРµСЃРєРѕР»СЊРєРѕ РІР°СЂРёР°РЅС‚РѕРІ select Р·Р°РїСЂРѕСЃРѕРІ.
 
 create table Phones(
 	id serial primary key,
