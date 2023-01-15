@@ -1,0 +1,35 @@
+Создайте, либо дополните вашу таблицу phones минимум 20 записями, реализуйте показ вариантов телефонов покупателю по заданным им параметрам.
+Например я хочу купить телефон, желательно производителя Apple в районе 400-600$. Покажите мне варианты.
+
+insert into Phones values(1, 'Samsung', 8, 'Samsung', 'OLED');
+insert into Phones values(2, 'Nexus', 8, 'Google', 'LCD');
+insert into Phones values(3, 'Nokia 5', 6, 'Nokia', 'LCD');
+insert into Phones values(4, 'J5', 9, 'Samsung', 'AMOLED');
+insert into Phones values(5, 'Pixel', 1, 'Google', 'OLED');
+insert into Phones values(6, '1210', 12, 'Nokia', 'Monochrome');
+insert into Phones values(7, 'edge', 1, 'Motorola', 'OLED');
+insert into Phones values(8, 'Xperia', 3, 'Sony', 'OLED');
+insert into Phones values(9, 'N100', 10, 'OnePlus', 'IPS');
+insert into Phones values(10, 'MultiPhone', 6, 'Prestigio', 'IPS');
+insert into Phones values(11, 'S22', 1, 'Samsung', 'OLED');
+insert into Phones values(12, 'Nothing', 1, 'Amazon', 'OLED');
+insert into Phones values(13, 'Pixel 7', 1, 'Amazon', 'OLED');
+insert into Phones values(14, 'Pixel 6a', 9, 'Google', 'AMOLED');
+insert into Phones values(15, '10T', 1, 'OnePlus', 'OLED');
+insert into Phones values(16, 'Zenfone 7', 12, 'Asus', 'Monochrome');
+insert into Phones values(17, 'Fold 4', 1, 'Samsung', 'OLED');
+insert into Phones values(18, 'Flip 4', 3, 'Samsung', 'OLED');
+insert into Phones values(19, 'Iphone 14', 10, 'Apple', 'IPS');
+insert into Phones values(20, 'SE', 6, 'Apple', 'IPS');
+
+
+
+select * from Phones;
+select brand, manf_factory from Phones where manf_factory = 'Samsung';
+select brand, manf_factory from Phones where manf_factory = 'Apple';
+select brand, manf_factory from Phones where manf_factory = 'Nokia';
+select brand, manf_factory from Phones where manf_factory = 'Google';
+select * from Phones where age = 1;
+select * from Phones where dis[lay_type = 'OLED';
+select * from Phones where dis[lay_type = 'LCD';
+select * from Phones where dis[lay_type = 'IPS';
