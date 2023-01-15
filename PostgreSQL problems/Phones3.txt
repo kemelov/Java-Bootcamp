@@ -1,0 +1,20 @@
+/*Обновите цены на определенные модели ваших телефонов. Умножьте количество товара в связи с новыми поставками. */
+
+/*Создаем поля price, amount для таблицы Phones */
+alter table Phones
+add price integer,
+add amount integer;
+
+
+/*Выставляем цены и кол-во товаров */
+update Phones set price = 100 where age >= 10;
+update Phones set price = 500 where age >= 5 and age < 10;
+update Phones set price = 800 where age < 5;
+
+update Phones set amount = 100 where age >= 10;
+update Phones set amount = 500 where age >= 5 and age < 10;
+update Phones set amount = 800 where age < 5;
+
+/*Повышаем цены и увеличиваем кол-во товаров */
+update Phones set price = price * 1.1;
+update Phones set amount = amount * 2;
