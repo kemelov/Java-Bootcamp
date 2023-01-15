@@ -12,6 +12,10 @@ alter table Phones
 add column manf_factory varchar(255);
 add column display_type varchar(255);
 
+insert into Phones values(1, 'Samsung', 8, 'Samsung', 'OLED');
+insert into Phones values(2, 'Nexus', 8, 'Google', 'LCD');
+insert into Phones values(3, 'Nokia 5', 6, 'Nokia', 'LCD');
+
 select * from Phones;
 select brand, age from phones;
 select * from Phones order by display_type;
